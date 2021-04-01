@@ -1,41 +1,20 @@
 <div class="container">
-    <div class="row">
-        <div class="col-md-12">
-            <div class="card mt-3" style="width:45rem">
-                <div class="card-header">
-                    Posts
-                </div>
-                <div class="card-body">
-                    <table class="table table-borderless table-hover">
-                        <thead class="table-dark">
-                          <tr>
-                            <th scope="col">userID</th>
-                            <th scope="col">ID</th>
-                            <th scope="col">Title</th>
-                            <th scope="col">Body</th>
-                          </tr>
-                        </thead>
-                        <tbody>
-                          <tr *ngFor="let post of Posts">
-                              <td>{{post.userId}}</td>
-                              <td>{{post.id}}</td>
-                              <td>{{post.title}}</td>
-                              <td>{{post.body}}</td>
-                          </tr>
-                        </tbody>
-                      </table>
-                </div>
-            </div>
-        </div>
-    </div>
+  <table class="table table-bordered table-hover">
+    <thead class="table-dark">
+      <tr>
+        <!-- <th scope="col">userID</th> -->
+        <th scope="col">ID</th>
+        <th scope="col">Title</th>
+        <th scope="col">Body</th>
+      </tr>
+    </thead>
+    <tbody *ngFor="let post of Posts">
+      <tr>
+        <!-- <td>{{post.userId}}</td> -->
+        <td>{{ post.id }}</td>
+        <td>{{ post.title }}</td>
+        <td maxlength="20">{{ post.body }}</td>
+      </tr>
+    </tbody>
+  </table>
 </div>
-
-
-
-
-
-
-
-  
-   
-

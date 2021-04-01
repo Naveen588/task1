@@ -1,10 +1,15 @@
-.row {
-  height: 100%;
+td,th{
+  text-overflow: ellipsis;
+  overflow: hidden;
+  border: 2px solid #000;
+  white-space: nowrap;
+  
 }
-.col-md-12 {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+
+table{
+  table-layout: fixed;
+  border: 2px solid #000;
+  max-width: 150ch;
 }
- 
+  
 

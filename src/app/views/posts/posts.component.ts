@@ -27,10 +27,10 @@ this._data.getPosts().subscribe(
     this.Posts = res;
     this.Posts.forEach((post:any) => {
     if(post.body?.length>=150){
-      post.body = post.body.slice(0, 149) + "...";
+      post.body = post.body.slice(0, 149) ;
     }
     if(post.title?.length>=150){
-      post.title = post.title.slice(0, 149) + "...";
+      post.title = post.title.slice(0, 149);
     }
     });
   })
